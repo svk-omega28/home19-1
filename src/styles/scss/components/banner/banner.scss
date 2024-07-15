@@ -1,0 +1,40 @@
+.banner {
+  height: 100vh;
+  min-height: 400px;
+  max-height: 1280px;
+  background-image: url($base-assets-path + 'images/svg/h.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: relative;
+  margin-bottom: 60px;
+
+  &__title {
+    font-size: map-get($font-sizes, 'xxl');
+    font-weight: 700;
+  }
+
+  &__controls {
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+
+    a {
+      display: inline-block;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      border: 1px solid map-get($colors, 'white');
+      color: map-get($colors, 'white');
+      font-size: map-get($font-sizes, 'lg');
+      position: relative;
+
+      i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -44%);
+      }
+    }
+  }
+}

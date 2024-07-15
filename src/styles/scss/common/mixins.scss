@@ -1,0 +1,6 @@
+@mixin text-gradient($color) {
+  @extend %gradient-bg-mixin;
+  background: -webkit- + $color;
+  background: -moz- + $color;
+  background: -o- + $color;
+}
