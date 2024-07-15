@@ -1,0 +1,44 @@
+$min-height: 300px;
+$photo-width: 200px;
+
+.partners {
+  padding: 60px 0;
+  background-color:map-get($colors, 'gray-bg');
+  margin: 0 auto;
+
+  &__content h2{
+    font-size:map-get($font-sizes, 'xs');
+    color:  map-get($colors, 'black');
+    text-transform: uppercase;
+    text-align: center;
+  }
+a{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+  &__member {
+    min-height: $min-height;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: map-get($colors, 'gray-bg');
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .carousel-indicators {
+    margin: 0;
+    bottom: -45px;
+  }
+
+  .carousel-indicators [data-bs-target] {
+    width: 16px;
+    height: 16px;
+    background-color: rgba(map-get($colors, 'blue'), 0.5);
+    border-radius: 50%;
+
+    .active {
+      background-color: map-get($colors, 'blue');
+    }
+  }
+}

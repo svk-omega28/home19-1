@@ -1,0 +1,31 @@
+.publications{
+  padding: 30px 60px;
+  background-color: map-get($colors, 'bg-gray');
+
+
+  .publications__content-item{
+    background-color: map-get($colors, 'white');
+    height: 400px;
+  }
+
+
+.publications__content-item-title h2 {
+  padding: 0 30px;
+  color: map-get($colors, 'blue');
+  font-size: map-get($font-sizes, 'sm');
+  font-weight: 700;
+}
+  .publications__content-item-title h4 {
+    padding: 0 30px;
+  color: map-get($colors, 'gray');
+  font-size: map-get($font-sizes, 'fs12');
+    font-weight: 500;
+
+}
+  .publications__content-item-description{
+    padding: 0 30px;
+    color: map-get($colors, 'black');
+    font-size: map-get($font-sizes, 'xs');
+    border-top: 2px solid map-get($colors, 'light-gray');
+  }
+}

@@ -1,0 +1,43 @@
+.clients {
+  @media (min-width: 1720px) {
+    .container {
+      max-width: 1700px;
+    }
+  }
+
+  @media (max-width: 1720px) {
+    .container {
+      max-width: 1400px;
+    }
+  }
+
+  @media (max-width: 1400px) {
+    .container {
+      max-width: 1200px;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .container {
+      max-width: 1024px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .container {
+      max-width: 100%;
+    }
+
+    .row {
+      border-radius: 0;
+      overflow: visible;
+    }
+  }
+
+
+  @media (max-width: 576px) {
+    img {
+      width: 100%;
+    }
+  }
+}

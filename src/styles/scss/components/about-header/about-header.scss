@@ -1,0 +1,81 @@
+.header {
+  padding-top: 50px;
+
+  top: 0;
+  width: 100%;
+
+
+  .navbar-toggler {
+    color: map-get($colors, 'white');
+    border-color: map-get($colors, 'white');
+  }
+
+  .container {
+    position: relative;
+  }
+
+  .navbar-brand {
+    position: relative;
+    z-index: 1;
+  }
+
+  .navbar-nav {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+
+    .nav-item a {
+        font-size: map-get($font-sizes, 'sm');
+        color: map-get($colors, 'blue');
+        font-weight: 700;
+        padding: 0;
+        transition: 0.3s color;
+        border-bottom: 2px solid transparent;
+
+      &:hover {
+        color: map-get($colors, 'accent-color');
+        border-bottom: 2px solid map-get($colors, 'accent-color') ;
+      }
+    }
+    }
+
+  &__top {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    z-index: 0;
+  }
+
+  &__lang-switcher {
+
+    input {
+      display: none;
+    }
+
+    span {
+      cursor: pointer;
+      font-size: map-get($font-sizes, 'fs12');
+      line-height: map-get($font-sizes, 'sm');
+      font-weight: 700;
+      color: map-get($colors, 'gray');
+      display: inline-block;
+      padding: 5px 7px;
+      border-radius: 8px;
+    }
+
+    input:checked + span {
+      background:  map-get($colors, 'accent-color');;
+    }
+  }
+
+  &__address a, &__contact a, &__socials a  {
+    text-decoration: none;
+    color: map-get($colors, 'gray');
+    font-size: map-get($font-sizes, 'sm');
+  }
+
+  &__contact a {
+    font-weight: 700;
+  }
+
+}

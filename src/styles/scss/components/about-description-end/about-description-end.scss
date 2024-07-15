@@ -1,0 +1,35 @@
+.about-end{
+   padding: 0 150px;
+
+  &__body{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: self-start;
+    gap: 60px;
+  }
+
+  &__title{
+    font-size: map-get($font-sizes, 'xxl');
+    color: map-get($colors, 'accent-color');
+    width: 30%;
+
+  }
+  &__description{
+    font-size: map-get($font-sizes, 'md');
+    color: map-get($colors, 'black');
+    width: 51%;
+  }
+
+
+
+  .statistics__item h2{
+    font-size: map-get($font-sizes, 'x');
+    color: map-get($colors, 'accent-color');
+  }
+  .statistics__item p{
+    font-size: map-get($font-sizes, 'sm');
+    color: map-get($colors, 'black');
+  }
+}
+

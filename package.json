@@ -1,0 +1,17 @@
+{
+  "name": "bootstrap-v2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile-home": "sass --watch ./src/styles/scss/home.scss:./src/styles/css/home.css",
+    "compile-about": "sass --watch ./src/styles/scss/about.scss:./src/styles/css/about.css",
+    "compile-publications": "sass --watch ./src/styles/scss/publications.scss:./src/styles/css/publications.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3"
+  }
+}
